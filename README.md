@@ -43,7 +43,13 @@ Será criada uma pasta com alguns arquivos de configuração, por isso, por conv
 Adicionar o APP recém criado
 ‘todos.apps.TodosConfig’
 
+7) Criar arquivos de migrações a partir das classes de models.py
+	python manage.py makemigrations
 
+8) Rodar as migrações
+	python manage.py migrate
+
+    No arquivo “db.sqlite3”, é possível ver as tabelas criadas
 
 
 
@@ -72,13 +78,20 @@ No models.py cada classe representa uma tabela no banco de dados.
 Para isso, a classe precisa extender “models.Model”
 Cada coluna do banco, será representado por um atributo nessa classe.
 
-Criar arquivos de migrações a partir das classes de models.py
-	python manage.py makemigrations
 
-Rodar as migrações
-	python manage.py migrate
+45:00 do video
 
-No arquivo “db.sqlite3”, é possível ver as tabelas criadas
+Isolar as configurações para não ficarem "expostas"
+    Instalar uma biblioteca para isso
+        pip install python-decouple
+    Criar um arquivo ".env" na raiz do projeto
+        SECRET_KEY=django-insecure-gy$h5(78bb-cufrww@^o9b%b&d9r0!#4mr(kx27*wcrg!crod-
+        DEBUG=True
+        ALLOWED_HOSTS=*
+    settings.py >> from decouple import config
+    config("SECRET_KEY")
+    Para a String de conexão, sera necessario outra biblioteca
+        pip install dj-database-url
+    from dj_database_url import parse as db_url
 
-
-Estou no 45:00 do video
+52:00 do video
