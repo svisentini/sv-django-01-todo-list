@@ -20,6 +20,7 @@ Cada projeto tera suas proprias dependencias.
 --------------------------------------------------------
 Passos para rodar a aplicação:
 --------------------------------------------------------
+- git config --global credential.helper store  >> Configura para GIT armazenar as credenciais
 - Git clone
 - sudo apt install python3-venv			>> Pacote para criar Ambientes Virtuais
 - VSCode
