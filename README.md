@@ -123,3 +123,5 @@ Isolar as configurações para não ficarem "expostas"
     from dj_database_url import parse as db_url
 
 52:00 do video
+
+11/09/2024
