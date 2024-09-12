@@ -17,6 +17,29 @@ PIP >> Gerenciador de pacotes do python
 Ambientes Virtuais >> Para nao ocorrer problemas de conflito de versoes das dependencias entre um projeto e outro >> Quando instaladas de forma global.
 Cada projeto tera suas proprias dependencias.
 	
+--------------------------------------------------------
+Passos para rodar a aplicação:
+--------------------------------------------------------
+- Git clone
+- sudo apt install python3-venv			>> Pacote para criar Ambientes Virtuais
+- VSCode
+	Extensões (Ctrl + P)
+		ext install ms-python.python
+		ext install batisteo.vscode-django
+		SQLite Viewer
+- python3 -m venv .venv 				>> Criar Ambiente Virtual
+- source .venv/bin/activate 			>> Entrar no Ambiente Virtual
+- pip install django
+- pip install python-decouple
+- pip install dj-database-url
+Verificar se os arquivos .env e db.sqlite3 existem
+- python manage.py makemigrations		>> Criar os arquivos de migração
+- python manage.py migrate				>> Rodar as migrações
+- python manage.py runserver			>> Rodar a aplicação
+
+--------------------------------------------------------
+
+
 1) Criar ambiente virtual e ativar
 Linux:
 		python3 -m venv .venv         >> Cria um Ambiente Virtual
