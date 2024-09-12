@@ -23,10 +23,15 @@ Passos para rodar a aplicação:
 - Git clone
 - sudo apt install python3-venv			>> Pacote para criar Ambientes Virtuais
 - VSCode
+  
 	Extensões (Ctrl + P)
+
 		ext install ms-python.python
+  
 		ext install batisteo.vscode-django
+  
 		SQLite Viewer
+  
 - python3 -m venv .venv 				>> Criar Ambiente Virtual
 - source .venv/bin/activate 			>> Entrar no Ambiente Virtual
 - pip install django
