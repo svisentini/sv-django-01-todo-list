@@ -32,12 +32,17 @@ Passos para rodar a aplicação:
 		ext install batisteo.vscode-django
   
 		SQLite Viewer
+
+		Django  >> do Baptiste Darthenay
+
+		MySQL >> do Weijan Chen
   
 - python3 -m venv .venv 				>> Criar Ambiente Virtual
 - source .venv/bin/activate 			>> Entrar no Ambiente Virtual
 - pip install django
 - pip install python-decouple
 - pip install dj-database-url
+- pip install black                     >> Biblioteca de formatação do código
 Verificar se os arquivos .env e db.sqlite3 existem
 - python manage.py makemigrations		>> Criar os arquivos de migração
 - python manage.py migrate				>> Rodar as migrações
@@ -128,3 +133,16 @@ Isolar as configurações para não ficarem "expostas"
 --------------------------
 
 11/09/2024
+Ferramentas para padronização do código
+    pip install black
+    black .   >> Roda o formatador dos dados
+
+--------------------------
+12/09/2024
+56:12 >> Criação das Páginas do Sistema
+Criar um arquivo todo_lis.html e alterar o tipo dele para Django HTML
+
+1:09:00
+
+
+
