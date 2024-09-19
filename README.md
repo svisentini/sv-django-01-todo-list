@@ -131,7 +131,6 @@ Isolar as configurações para não ficarem "expostas"
 52:00 do video
 
 --------------------------
-
 11/09/2024
 Ferramentas para padronização do código
     pip install black
@@ -142,7 +141,17 @@ Ferramentas para padronização do código
 56:12 >> Criação das Páginas do Sistema
 Criar um arquivo todo_lis.html e alterar o tipo dele para Django HTML
 
-1:09:00
+--------------------------
+18/09/2024
+1:09:00 >> Utilizando bootstrap
+https://getbootstrap.com/
+Sempre que alterar o Modelo ou criar um novo, precisa criar uma nova migração
+	python manage.py makemigrations
+Aplicar a migração
+	python manage.py migrate
+Se precisar apagar o arquivo db.sqlite3, apagar a conexao e criar outra para nao dar problemas.
 
+
+1:26:00
 
 
