@@ -168,8 +168,8 @@ CBV
 
 1:30:00
 Cadastro de Tarefas
-View >> from django.views.generic import ListView, CreateView
-Para create view, a template utilizada sera o nome do modelo + "_form" >> Nesse caso, todo_form.html
+	View >> from django.views.generic import ListView, CreateView
+	Para create view, a template utilizada sera o nome do modelo + "_form" >> Nesse caso, todo_form.html
 
 
 1:35:00
