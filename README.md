@@ -8,8 +8,10 @@ Framework para Desenvolvimento Python
 
 Video Youtube
 	https://www.youtube.com/watch?v=MsUL3Pgofl4&t=28s
+	
 Configuração do Ambiente
 https://github.com/treinaweb/treinaweb-youtube-introducao-ao-django/blob/main/.github/SETUP.md
+
 Instalar uma extensão no VSCode para facilitar a visualização dos dados no SQLite
 	SQLite Viewer
 
@@ -152,6 +154,44 @@ Aplicar a migração
 Se precisar apagar o arquivo db.sqlite3, apagar a conexao e criar outra para nao dar problemas.
 
 
-1:26:00
+--------------------------
+18/09/2024
+1:26:00 >> Uma nova maneira de criar as Views
+Esatvamos utilizando as "FBV" >> Functions Based Views (Views baseadas em funções)
+
+Vamos Utilizar as "Class Based Views" (CBV) >> Views baseadas em Classes >> Metodo mais novo e mais recomendado
+
+CBV
+	Django ja fornece uma serie de classes que podem ser utilizadas
+	Fazer o import da da classe ListView 
+	****  A classe vai utilizar o template que tem o nome do modelo utilizado + "_list" >> Nesse caso, todo_list.html
+
+1:30:00
+Cadastro de Tarefas
+View >> from django.views.generic import ListView, CreateView
+Para create view, a template utilizada sera o nome do modelo + "_form" >> Nesse caso, todo_form.html
+
+
+1:35:00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
