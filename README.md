@@ -45,6 +45,7 @@ Passos para rodar a aplicação:
 - pip install python-decouple
 - pip install dj-database-url
 - pip install black                     >> Biblioteca de formatação do código
+- pip install crispy-bootstrap5			>> Biblioteca para formatação do "form" usando bootstrap5
 Verificar se os arquivos .env e db.sqlite3 existem
 - python manage.py makemigrations		>> Criar os arquivos de migração
 - python manage.py migrate				>> Rodar as migrações
@@ -172,23 +173,33 @@ Cadastro de Tarefas
 	Para create view, a template utilizada sera o nome do modelo + "_form" >> Nesse caso, todo_form.html
 
 
+-----------------------------
 1:35:00
 
+{% csrf_token %}
 
+reverse_lazy >> Permite utilizar o nome das rotas
 
+django-crispy-forms >> Permite renderizar o form utilizando booststrap
+pip install crispy-bootstrap5
+precisa adicionar bicliotecas no INSTALLED_APPS do sttings.py
+verbose_name >> Nome para aperecer na tela >> Definido nos campos do Model.
 
+1:50:10
 
+Reaproveitamento de Código:
+Herança de Templates
+Criação de pontos onde podem ser inseridos blocos de códigos.
+{% extends "base.html" %} >> Indica qual template base ira utilizar.
 
+1:54:19
 
+Pagina de Edição de Tarefas
+from django.views.generic import UpdateView
 
+2:01:24
 
-
-
-
-
-
-
-
+Pagina de Exclusao
 
 
 

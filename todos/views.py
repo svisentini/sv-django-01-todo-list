@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.urls import reverse_lazy # Para usar o name das urls
 from .models import Todo
 
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, UpdateView
 
 
 # Create your views here.
@@ -26,3 +27,9 @@ class TodoListView(ListView):
 class TodoCreateView(CreateView):
     model = Todo
     fields = ["title", "deadline"]
+    success_url = reverse_lazy("url_todo_list")
+
+class TodoUpdateView(UpdateView):
+    model = Todo
+    fields = ["title", "deadline"]
+    success_url = reverse_lazy("url_todo_list")
