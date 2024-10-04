@@ -199,8 +199,22 @@ from django.views.generic import UpdateView
 
 2:01:24
 
-Pagina de Exclusao
+Pagina de Exclusao de Tarefa
+Importar a Generic View >> DeleteView
+Um POST para a mesma rota é que confirma a exclusao
 
+2:08:40
+
+Ação de concluir uma tarefa
+É uma tarefa especifica do projeto, entao nao tera uma view generica do Django que faça isso !
+Importar a Generic View >> View (que é apenas uma view sem nenhuma funcionalidade)
+
+2:15:23
+
+Alguns ajustes na aplicação
+Ordenação da listagem
+Desabilitar botoes quando tarefa estiver concluida
+Regras de negocio devem estar no modelo e nao na view
 
 
 
